@@ -1,3 +1,6 @@
+# Extracting all coins first listing times on Binance using their price data.
+# The earliest date when the coin's price is shown on Binance is considered its listing time.
+
 import pandas as pd
 from datetime import datetime
 import pickle
