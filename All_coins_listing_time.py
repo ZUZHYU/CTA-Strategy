@@ -20,7 +20,7 @@ for f in files:
     dt = datetime.fromtimestamp(timestamp)
     token_list_time[symbol]=dt
 
-with open(file+'/all_tokens_listing_time.csv') as f:
+with open(file+'/all_tokens_listing_time.csv','wb') as f:
     pickle.dump(token_list_time,f)
 
 print('finised')
