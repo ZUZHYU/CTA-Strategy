@@ -6,8 +6,8 @@ from datetime import datetime
 import pickle
 from glob import glob
 
-file = '/local/scratch/yuzhang_utxo/token_price'
-files = glob(file+'/*_minute_price.csv')
+file = '/local/scratch/yuzhang_utxo/token_price'    #directory where all tokens' price time series data are located.
+files = glob(file+'/*_minute_price.csv')            #we downloaded minute-level price data and daily-level price data.
 print(len(files))
 
 token_list_time = dict()
